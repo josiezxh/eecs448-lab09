@@ -1,0 +1,46 @@
+p{
+    color: white;
+    font-family: Verdana;
+
+}
+
+body{
+    background-image: url(https://wallpaperaccess.com/full/144521.jpg);
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+h1{
+    font-family: Georgia;
+    font-size: 100px;
+    color: #cc0066;
+}
+
+h1:hover{
+    color: #CC33FF;
+}
+
+h2{
+    color: white;
+    font-family: Verdana;
+}
+
+div.first{
+    background-color:#FF6699; 
+    padding: 10px;
+}
+
+div.first:hover{
+    background-color: #66CCCC; 
+    padding: 10px;
+}
+
+div.second{
+    background-color: #CC99FF; 
+    padding: 10px;
+}
+
+div.second:hover{
+    background-color:#66CCCC; 
+    padding: 10px;
+}

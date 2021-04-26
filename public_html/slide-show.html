@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2: Slide show!</title>
+        <style>
+            img {
+                width: 800px;
+                height: 600px;
+                border: 5px solid #134213;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2 class="valid">Image Slide Show!</h2>
+        <image id="slide" src="http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cbe878fe-funny-weird-wtf-stock-photos-49-5a3a33dcdb38d__700.jpg">
+        <br>
+        <button onclick="goLeft()">previous</button>
+        <button onclick="goRight()">next</button>
+        
+      
+        <script>
+            var slide1 = "http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cbe878fe-funny-weird-wtf-stock-photos-49-5a3a33dcdb38d__700.jpg";
+            var slide2 = "http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cb88775f-funny-weird-wtf-stock-photos-4-5a391635d4441__700.jpg";
+            var slide3 = "http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cb8c4b66-funny-weird-wtf-stock-photos-35-5a392b1153101__700.jpg";
+            var slide4 = "http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cb938bc8-funny-weird-wtf-stock-photos-29-5a3bbf6b34a98__700.jpg";
+            var slide5 = "http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cba74cb3-funny-weird-wtf-stock-photos-24-5a392d5d9bda7__700.jpg";
+            var slide6 = "http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cbae6140-funny-weird-wtf-stock-photos-58-5a4649c6043db__700.jpg";
+
+            var index = 1;
+            
+            function goLeft(){
+                index = index - 1;
+                if(index == 0)
+                {
+                    index = 6;
+                }
+                showSlide()
+            }
+
+            function goRight(){
+                index = index + 1;
+                if(index == 7)
+                {
+                    index = 1;
+                }
+                showSlide()
+            }
+
+            function showSlide(){
+                if(index == 1)
+                {
+                    document.getElementById("slide").src = slide1;
+                }
+                else if(index == 2)
+                {
+                    document.getElementById("slide").src = slide2;
+                }
+                else if(index == 3)
+                {
+                    document.getElementById("slide").src = slide3;
+                }
+                else if(index == 4)
+                {
+                    document.getElementById("slide").src = slide4;
+                }
+                else if(index == 5)
+                {
+                    document.getElementById("slide").src = slide5;
+                }
+                else if(index == 6)
+                {
+                    document.getElementById("slide").src = slide6;
+                }
+            }
+
+        </script>
+    </body>
+</html>

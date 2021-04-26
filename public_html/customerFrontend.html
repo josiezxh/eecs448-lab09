@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3: Web Store</title>
+        <link rel="stylesheet" href="style.css">
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="formChecker.js"></script>
+    </head>
+
+
+
+
+    <body class="main">
+    
+
+    <marquee behavior="slide" direction="right" scrollamount="30">
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+        <img src="https://media3.giphy.com/media/o7mLSkGYCu9Pi/giphy.gif"></img>
+    </marquee>
+
+    
+        <div style="display: grid;place-content: center;padding: 50px;">
+            <h1>Spooky Web Store</h1>
+            <div name="form">
+                <form action="customerBackend.php" method="post" onsubmit="return CheckOut(event)" id="shop-form">
+                <div class="item">
+                    <img src="https://images.newscientist.com/wp-content/uploads/2020/09/22145012/big-frog-eyes.jpg"></img>
+                    <h3>SUPER COOL FROG!!! $7.50</h3>
+                    <p>This is the coolest frog you could ever buy, you won't regret it!!!!!!</p>
+                    <lable>Quantity: </lable>
+                    <input type="number" name="frog" id="frogC" placeholder="0">
+                </div><br>
+                <div class="item">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71ZOoJJwfAL._AC_SX425_.jpg"></img>
+                    <h3>glue $30.00</h3>
+                    <p>A good tool or snack for any day.</p>
+                    <lable>Quantity: </lable>
+                    <input type="number" name="glue" id="glueC" placeholder="0">
+                </div><br>
+                <div class="item">
+                    <img src="https://www.fillmorecontainer.com/media/catalog/product/t/e/test_3134.jpg"></img>
+                    <h3>Jar $3.50</h3>
+                    <p>A glass container with a greater height than width, endless possiblities, the sky is the limit!</p>
+                    <lable>Quantity: </lable>
+                    <input type="number" name="jar" id="jarC" placeholder="0">
+                </div><br><br>
+
+                    <td>Username: </td><br>
+                    <input type="text" name="name" id="username"><br><br>
+                    <td>Password: </td><br>
+                    <input type="password" name="password" id="pw"><br><br><br>
+
+                    <td>Choose Shipping:</td><br>
+                    <input type="radio" name="s" id="s1" value="1">
+                    <lable>Free 7 Day</lable><br>
+                    <input type="radio" name="s" id="s2" value="2">
+                    <lable>$50.00 over night</lable><br>
+                    <input type="radio" name="s" id="s3" value="3">
+                    <lable>$5.00 three day</lable><br><br>
+
+                    <input type="submit" value="Submit!" style="color: green;"><br><br>
+                </form>
+                <button style="color: red;"><a href="https://people.eecs.ku.edu/~j664h633/customerFrontend.html?frog=0&glue=0&jar=0">RESET</a></button>
+            </div>
+        </div>
+       
+    </body>
+
+    
+
+</html>

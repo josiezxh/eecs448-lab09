@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Excersise 1: Multiplication Table</title>
+    </head>
+    <style>
+        body{
+    background-image: url(https://www.zingerbug.com/Backgrounds/background_images/green_parchment_paper_wallpaper_texture_seamless.jpg);
+    padding: 50px;
+
+    }
+    </style>
+
+    <h1 style="color:#98FB98;">100 X 100 Multiplication table</h1>
+
+
+    <body>
+        <p><?php
+            $rows = 101;
+            $cols = 101;
+
+            echo "<table border=\"1\">";
+
+                echo'<tr style="background-color:#98FB98;">';
+                    for ($i = 0; $i < $cols; $i++)
+                    echo '<td>' .$i.'</td>';
+                echo'</tr>';
+               
+            for ($r = 1; $r < $rows; $r++){
+
+                echo'<tr>';
+                    echo'<td style="background-color: #98FB98;">' .$r. '</td>';
+
+                for ($c = 1; $c < $cols; $c++)
+                    echo '<td style="background-color: white;">' .$c*$r.'</td>';
+            echo '</tr>'; // close tr tag here
+
+            }
+
+            echo"</table>";
+        ?></p>
+    </body>
+</html>
+

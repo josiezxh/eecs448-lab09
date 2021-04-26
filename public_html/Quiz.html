@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2: Quiz</title>
+    </head>
+    <style>
+        body{
+            padding-top: 50px;
+            padding: fill;
+            background-image: url(https://i.pinimg.com/736x/23/2f/e0/232fe0f070c923472229787f8a435761.jpg);}
+        
+        form{
+            background-color: #f7ccc6;
+            padding: 20px;
+            max-width:fit-content;
+            display: inline-block;
+            border-style:double;
+            border-color: #f54928;
+            border-width: 10px;
+        }
+        
+    </style>
+
+
+    <body>
+
+        <form action="Quiz.php" method="post" id="quiz-form" >
+            <h1>The Quiz</h1>
+            <ol>
+                <li>
+                    <h3>Which is the only vowel not used as the first letter in a US State?</h3>
+                    <div>
+                        <input type="radio" name="q1a" id="q1a1" value="1">
+                        <lable>O</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1a" id="q1a2" value="2">
+                        <lable>E</lable> <!--correct-->
+                    </div>
+                    <div>
+                        <input type="radio" name="q1a" id="q1a3" value="3">
+                        <lable>A</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1a" id="q1a4" value="4">
+                        <lable>I</lable>
+                    </div>
+                </li>
+                <li>
+                    <h3>The first successful vaccine was introduced by Edward Jenner in 1796. Which disease did it guard against?</h3>
+                    <div>
+                        <input type="radio" name="q2a" id="q2a1" value="1">
+                        <lable>Smallpox</lable> <!--correct-->
+                    </div>
+                    <div>
+                        <input type="radio" name="q2a" id="q2a2" value="2">
+                        <lable>Influenza</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2a" id="q2a3" value="3">
+                        <lable>HPV</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2a" id="q2a4" value="4">
+                        <lable>Polio</lable>
+                    </div>
+                </li>
+                <li>
+                    <h3>In tennis, what piece of fruit is found at the top of the men's Wimbledon trophy?</h3>
+                    <div>
+                        <input type="radio" name="q3a" id="q3a1" value="1">
+                        <lable>Banana</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3a" id="q3a2" value="2">
+                        <lable>Pineapple</lable> <!--correct-->
+                    </div>
+                    <div>
+                        <input type="radio" name="q3a" id="q3a3" value="3">
+                        <lable>Pear</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3a" id="q3a4" value="4">
+                        <lable>Apple</lable>
+                    </div>
+                </li>
+                <li>
+                    <h3>Which vitamin is the only one that you will not find in an egg?</h3>
+                    <div>
+                        <input type="radio" name="q4a" id="q4a1" value="1">
+                        <lable for="q4a1">Vitamin K</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4a" id="q4a2" value="2">
+                        <lable>Vitamin E</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4a" id="q4a3" value="3">
+                        <lable>Vitamin B6</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4a" id="q4a4" value="4">
+                        <lable>Vitamin C</lable> <!--correct-->
+                    </div>
+                </li>
+                <li>
+                    <h3>What was Britney Spears’ first single called?</h3>
+                    <div>
+                        <input type="radio" name="q5a" id="q5a1" value="1">
+                        <lable>Baby One More Time</lable> <!--correct-->
+                    </div>
+                    <div>
+                        <input type="radio" name="q5a" id="q5a2" value="2">
+                        <lable>Toxic</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5a" id="q5a3" value="3">
+                        <lable>Gimme More</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5a" id="q5a4" value="4">
+                        <lable>Oops! I Did It Again</lable>
+                    </div>
+                </li>
+            </ol>
+            <input type="submit" value="Submit Quiz"/>
+        </form>
+        
+    </body>
+</html>

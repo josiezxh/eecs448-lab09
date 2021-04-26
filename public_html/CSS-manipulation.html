@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 4: CSS Manipulation</title>
+    </head>
+
+    <body style="padding:100px;">
+
+        <h1>This is a Heading</h1>
+        <p style="border-style: solid; padding: 10px;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+
+
+        <h4>Input color code: 00-FF</h4>
+        <h3>Border</h3>
+        <lable>red value</lable>
+        <input type="text" id="red1"><br>
+        <lable>green value</lable>
+        <input type="text" id="green1"><br>
+        <lable>blue value</lable>
+        <input type="text" id="blue1"><br>
+        <lable>width(px)</lable>
+        <input type="number" id="width"><br>
+        <h3>Background</h3>
+        <lable>red value</lable>
+        <input type="text" id="red2"><br>
+        <lable>green value</lable>
+        <input type="text" id="green2"><br>
+        <lable>blue value</lable>
+        <input type="text" id="blue2"><br>
+        <input type="button" value="change colors" onclick="return change()">
+
+
+        <script>
+            function change(){
+                
+            var color1 = document.querySelector('#red1').value + document.querySelector('#green1').value + document.querySelector('#blue1').value;
+            var color2 = document.querySelector('#red2').value + document.querySelector('#green2').value + document.querySelector('#blue2').value;
+            document.querySelector("p").style.borderColor = "#" + color1;
+            document.querySelector("p").style.borderWidth = document.querySelector('#width').value + "px";
+            document.querySelector("p").style.backgroundColor = "#" + color2;
+        }
+        </script>
+    </body>
+</html>
